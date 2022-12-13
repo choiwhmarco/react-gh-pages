@@ -23,6 +23,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -47,6 +49,7 @@
   },
   "description": "https://github.com/mui/material-ui/blob/v5.10.13/docs/data/material/components/cards/RecipeReviewCard.js",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "react-scripts": "latest"
   }
 }
