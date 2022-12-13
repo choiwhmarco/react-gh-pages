@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.b19453c4.css",
+    "main.js": "/react-gh-pages/static/js/main.e2b04a30.js",
+    "static/media/covid.jpeg": "/react-gh-pages/static/media/covid.88d11f5e2835cbe361fb.jpeg",
+    "static/media/salivary_proteins.png": "/react-gh-pages/static/media/salivary_proteins.2821542a077a08b2b102.png",
+    "static/media/main-featured.png": "/react-gh-pages/static/media/main-featured.f90b066daf484165a53e.png",
+    "static/media/chord.png": "/react-gh-pages/static/media/chord.a0976a25f21c33c43db7.png",
+    "static/media/logo-uthsc.svg": "/react-gh-pages/static/media/logo-uthsc.edf20f21752fa37c748d224b76a2ef04.svg",
+    "static/media/icon-salivary-protein.png": "/react-gh-pages/static/media/icon-salivary-protein.116e3dd268fee06f9e49.png",
+    "static/media/icon-clustering.png": "/react-gh-pages/static/media/icon-clustering.ca9f5d135465b9a8d428.png",
+    "static/media/hspw_logo.png": "/react-gh-pages/static/media/hspw_logo.2116565083af1ba8db9b.png",
+    "static/media/logo-ub.png": "/react-gh-pages/static/media/logo-ub.265060319d31febb6723.png",
+    "static/media/logo-forsyth.png": "/react-gh-pages/static/media/logo-forsyth.6626293f1f8dd5bab526.png",
+    "static/media/logo-jcvi.svg": "/react-gh-pages/static/media/logo-jcvi.ef3f558b8a09c7597a3549c50e6d27bb.svg",
+    "static/media/logo-nih-nidcr.png": "/react-gh-pages/static/media/logo-nih-nidcr.d8918a07f6c3bb6a8ca0.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.b19453c4.css.map": "/react-gh-pages/static/css/main.b19453c4.css.map",
+    "main.e2b04a30.js.map": "/react-gh-pages/static/js/main.e2b04a30.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b19453c4.css",
+    "static/js/main.e2b04a30.js"
+  ]
+}
