@@ -12,8 +12,6 @@ import nih from './logo-nih-nidcr.png';
 
 class Footer extends Component {
   render () {
-    const { classes } = this.props
-    const currentYear = new Date().getFullYear()
     return (
       <div id="footer">
         <div class="footer-top">

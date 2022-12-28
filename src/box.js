@@ -27,7 +27,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function AutoGrid() {
   return (
-    <Box sx={{ flexGrow: 2}} bgcolor="common.yellow">
+    <Box sx={{ flexGrow: 2,mt:'2%'}} bgcolor="common.yellow">
         <Grid>
           <Item>
             <Typography variant="h5" gutterBottom>Recent News</Typography>

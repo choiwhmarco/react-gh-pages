@@ -24,7 +24,7 @@ const flexContainer = {
 }
 export default function Footer() {
   return (
-    <div sx = {{ml:303,mt:60,alignItems: 'center',}}>
+    <div sx = {{ml:303,mt:80,alignItems: 'center',}}>
       <Box
         px={{ xs: 3, sm: 10 }}
         py={{ xs: 5, sm: 10 }}

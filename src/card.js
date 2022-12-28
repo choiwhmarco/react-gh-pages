@@ -39,16 +39,16 @@ export default function AutoGrid() {
           <Item>
             <img src={salivary_protein} display="flex" width="90%" height="40%"/>
             <Typography variant="h5" gutterBottom>Search for specific salivary proteins found in our database.</Typography>
-            <Divider sx={{pb: 6}}/>
-            <Button variant="text" href="" sx={{ fontSize: 20,mt:1 }}>Salivary Protein</Button>
+            <Divider sx={{pb: 2}}/>
+            <Button variant="text" href="" sx={{ fontSize: 20,mt:'10%' }}>Salivary Protein</Button>
           </Item>
         </Grid>
         <Grid xs={2} md={2.1}display="flex">
           <Item>
             <img src={analysis} display="flex" width="90%" height="40%"/>
             <Typography variant = "h5" gutterBottom>Evaluate proteins, quantify abundance and perform statistics.</Typography>
-            <Divider sx={{pb: 6}}/>
-            <Button variant="text" href="" sx={{ fontSize: 20,mt:1}}>Analyze</Button>
+            <Divider sx={{pb: 2}}/>
+            <Button variant="text" href="" sx={{ fontSize: 20,mt:'10%'}}>Analyze</Button>
           </Item>
         </Grid>
         <Grid xs={2} md={2.1}display="flex">
@@ -56,7 +56,7 @@ export default function AutoGrid() {
             <img src={upload} display="flex" width="90%" height="40%"/>
             <Typography variant="h5" gutterBottom>Upload experiment to the database. Files have to be in mzTab format.</Typography>
             <Divider sx={{pb: 2}}/>
-            <Button variant="text" href="" sx={{ fontSize: 20,mt:1 }}>Upload</Button>
+            <Button variant="text" href="" sx={{ fontSize: 20,mt:'10%' }}>Upload</Button>
           </Item>
         </Grid>
         <Grid xs={2} md={2.1}display="flex">
@@ -64,7 +64,7 @@ export default function AutoGrid() {
             <img src={download} display="flex" width="90%" height="40%"/>
             <Typography variant="h5" gutterBottom>Download datasets from database with protein abundance and sequence.</Typography>
             <Divider sx={{pb: 2}}/>
-            <Button variant="text" href="" sx={{ fontSize: 20,mt:1 }}>Download</Button>
+            <Button variant="text" href="" sx={{ fontSize: 20,mt:'10%' }}>Download</Button>
           </Item>
         </Grid>
         <Grid display="flex" sx={{ml:4}}>
@@ -78,43 +78,43 @@ export default function AutoGrid() {
           </Item>
         </Grid>
       </Grid>
-      <Grid container direction='row' spacing={1} p={2} display="flex">
+      <Grid container direction='row' spacing={1} p={2} display="flex" >
         <Grid xs={2} md={2.1} display="flex">
           <Item>
             <img src={pubmed} display="flex" width="90%" height="40%"/>
             <Typography variant="h5" gutterBottom>Includes links to full text articles and other related resources.</Typography>
-            <Divider sx={{pb: 3}}/>
-            <Button variant="text" href="" sx={{ fontSize: 20,mt:1 }}>PubMed</Button>
+            <Divider sx={{pb: 2}}/>
+            <Button variant="text" href="" sx={{ fontSize: 20,mt:'10%',mb:'10%' }}>PubMed</Button>
           </Item>
         </Grid>
         <Grid xs={2} md={2.1}display="flex">
           <Item>
             <img src={gene} display="flex" width="90%" height="40%"/>
             <Typography variant = "h5" gutterBottom>A locatable region of genomic sequence, corresponding to a unit of inheritance.</Typography>
-            <Divider/>
-            <Button variant="text" href="" sx={{ fontSize: 20}}>Gene</Button>
+            <Divider sx={{pb: 2}}/>
+            <Button variant="text" href="" sx={{ fontSize: 20,mt:'10%' }}>Gene</Button>
           </Item>
         </Grid>
         <Grid xs={2} md={2.1}display="flex">
           <Item>
             <img src={protein_cluster} display="flex" width="90%" height="40%"/>
             <Typography variant="h5" gutterBottom>Search clusters that share one or more common proteins are merged further.</Typography>
-            <Divider/>
-            <Button variant="text" href="" sx={{ fontSize: 20 }}>Protein Cluster</Button>
+            <Divider sx={{pb: 2}}/>
+            <Button variant="text" href="" sx={{ fontSize: 20,mt:'10%' }}>Protein Cluster</Button>
           </Item>
         </Grid>
         <Grid xs={2} md={2.1}display="flex">
           <Item>
             <img src={api} display="flex" width="90%" height="40%"/>
-            <Typography variant="h5" gutterBottom>Allows access to the datasets by retrieving requested data in JSON format.</Typography>
-            <Divider />
-            <Button variant="text" href="" sx={{ fontSize: 20 }}>API</Button>
+            <Typography variant="h5" gutterBottom>Allows access to the datasets by retrieving requested data in JSON.</Typography>
+            <Divider sx={{pb: 2}}/>
+            <Button variant="text" href="" sx={{ fontSize: 20,mt:'10%' }}>API</Button>
           </Item>
         </Grid>
         <Grid xs={2} md={2.2} display="flex" sx={{ml:4}}>
           <Item>
           <iframe src="https://youtube.com/embed/u4JN1FmLGE4" width="100%"></iframe>
-          <Button variant="text" href="" sx={{ fontSize: 20,mt:1 }}>Watch Video</Button>
+          <Button variant="text" href="" sx={{ fontSize: 20,mt:'10%' }}>Watch Video</Button>
           </Item>
         </Grid>
       </Grid>
