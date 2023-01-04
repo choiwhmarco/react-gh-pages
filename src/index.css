@@ -1,3 +1,12 @@
+/*
+  Variables used to control the fixed width and padding of the application.
+*/
+:root {
+  --fixed-width: 1140px;
+  --fixed-padding: 24px;
+  --header-height: 75px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +17,54 @@ body {
   font-family: sans-serif;
 }
 
+#application,
+#page-content {
+  position: relative;
+}
+
+/* Styles enabling the fixed width view */
+#application[data-layout="fixed"] header > div,
+#application[data-layout="fixed"] > #page-content,
+#application[data-layout="fixed"] > #footer .footer-top {
+  width: var(--fixed-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+#application[data-layout="fixed"] .css-onape-MuiStack-root {
+  margin-left: 0px;
+}
+/* Main page content wrapper and footer.  Applying the same padding as the header */
+#page-content, #footer .footer-top {
+  padding-left: var(--fixed-padding);
+  padding-right: var(--fixed-padding);
+}
+#page-content {
+  padding-top: var(--header-height);
+  margin-bottom: 3rem;
+}
+
+/* Overriding default padding with CSS variable for easier editing */
+@media (min-width: 600px) {
+  #root .css-1yo9slo-MuiToolbar-root {
+    padding: 0px var(--fixed-padding);
+  }
+}
+
 header {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   color: #212529;
+  height: var(--header-height);
+}
+
+header.css-v526sl-MuiPaper-root-MuiAppBar-root {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  box-shadow: none;
+  transition: none;
+}
+body.scrolled header.css-v526sl-MuiPaper-root-MuiAppBar-root {
+  box-shadow: 0 1px 11px 0px #666;
 }
 
 .nav-area {
@@ -129,13 +183,14 @@ button span {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #f8fbfe;
-  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+  background-color: #eee;
+  /* box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08); */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #fff;
+
 }
 
 #footer .footer-top .footer-contact {
@@ -280,22 +335,23 @@ button span {
   text-decoration: none;
 }
 
-#footer-logos img{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 10px;
-    margin-left: 9%;
-    vertical-align: middle;
+
+#footer-logos {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-#footer-logos ul{
+#footer-logos ul {
     list-style-type: none;
     padding: 0;
     margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#footer-logos li{
-    display: inline;
+#footer-logos li, #footer-logos li a {
+    display: inline-block;
 }
 
 #footer-text{

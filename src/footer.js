@@ -16,8 +16,8 @@ class Footer extends Component {
     const currentYear = new Date().getFullYear()
     return (
       <div id="footer">
-        <div class="footer-top">
-          <div class="container">
+        <div className="footer-top">
+          <div className="container">
            
               <div id="footer-logos">
                     <ul>
@@ -38,16 +38,16 @@ class Footer extends Component {
                         <li><a href="Accessibility">Accessibility</a></li>
                         <li><a href="Copyrights">Copyrights</a></li>
                         <li><a href="General_disclaimer">Disclaimers</a></li>
-                        <li class="last"><a href="Privacy_policy">Privacy Notice</a></li>
+                        <li className="last"><a href="Privacy_policy">Privacy Notice</a></li>
                     </ul>
                     <ul id="last_sentence">
-                        <li class="last">Project is funded by NIDCR under grant R01 DE016937-16</li>
+                        <li className="last">Project is funded by NIDCR under grant R01 DE016937-16</li>
                     </ul>
                     <ul>
                         <li> J. Craig Venter Institute</li>
                         <li>4120 Capricorn Lane</li>
                         <li>La Jolla, CA 92037</li>
-                        <li class="last"><a href="mailto:help@salivaryproteome.org">Contact Us</a></li>
+                        <li className="last"><a href="mailto:help@salivaryproteome.org">Contact Us</a></li>
                     </ul>
                 </div>
     

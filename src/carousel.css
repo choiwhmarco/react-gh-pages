@@ -1,8 +1,6 @@
 .carousel {
-    width: 85%;
-    height: 90%;
+    height: 400px;
     background-color: white;
-    margin-left:5%;
 }
 
 .carouselInner {

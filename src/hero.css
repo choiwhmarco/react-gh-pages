@@ -1,0 +1,62 @@
+/* 
+	We need to shift the hero over the width of the padding in the fluid layout. 
+*/
+.hero[data-width="fullscreen"] {
+	width: 100vw;
+	position: relative;
+	left: calc(-1 * var(--fixed-padding));
+}
+/* 
+	In a fixed layout, we need to shift the hero left all of the space that margins
+	take up, along with the padding.
+*/
+#application[data-layout="fixed"] .hero[data-width="fullscreen"] {
+	position: relative;
+	left: calc(-1 * ((100vw - (var(--fixed-width) - 2 * var(--fixed-padding))) / 2));
+}
+
+/* 
+	In a fixed layout at full screen, we need to constrain the inner contents to the
+	size of the fixed width.  We also need the same padding.
+*/
+#application[data-layout="fixed"] .hero[data-width="fullscreen"] > div {
+  width: var(--fixed-width);
+  margin: auto;
+  padding: 0px var(--fixed-padding);
+}
+
+/*
+	The background image contains a fair bit of white which clashes with the white text.
+	The goal here is to darken the background image so that the text stands out better.
+	
+	The background image is set as a pseudo-element which is layered beneath the text
+	but on top of the .hero layer itself.  The hero background is actually just black,
+	so decreasing the opacity of the background image allows some of that to bleed through,
+	creating the darkening effect.
+*/
+.hero {
+	padding: 5rem;
+	margin-bottom: 3rem;
+	min-height: 600px;
+	background-image: url('./hero.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.hero h1, .hero p {
+	position: relative;
+	z-index: 5;
+	color: white;
+	text-align: center;
+	padding: 0px;
+}
+.hero h1 {
+	font-size: 64px;
+	margin-bottom: 3rem;
+}
+.hero p {
+	font-size: 24px;
+}
